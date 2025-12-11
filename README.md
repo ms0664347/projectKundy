@@ -1,173 +1,106 @@
-# Berry Free React Material UI Admin Template [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20Berry%20React%20-%20The%20most%20beautiful%20Material%20designed%20Admin%20Dashboard%20Template%20&url=https://berrydashboard.io&via=codedthemes&hashtags=reactjs,webdev,developers,javascript)
+Kundy — React + Tauri Windows 桌面應用程式
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/codedthemes/berry-free-react-admin-template/blob/main/LICENSE)
-[![GitHub package version](https://img.shields.io/github/package-json/v/codedthemes/mantis-free-react-admin-template)](https://github.com/codedthemes/berry-free-react-admin-template/)
-[![Download ZIP](https://img.shields.io/badge/Download-ZIP-blue?style=flat-square&logo=github)](https://codedthemes.com/item/berry-mui-free-react-admin-template/)
-[![Join Discord](https://img.shields.io/badge/Join-Discord-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/invite/p2E2WhCb6s)
+Kundy 是一套以 React + Vite 開發，並透過 Tauri 打包成 Windows 桌面應用程式的
+本地端記帳與工作日誌管理工具。本專案完全離線運作，所有資料（JSON）皆儲存在使用者電腦的本地檔案系統，無需任何後端服務或資料庫。
 
-Berry is a free Material UI admin dashboard template built with React. It is meant to provide the best possible User Experience with highly customizable feature-rich pages. It is a complete Dashboard Template that has easy and intuitive responsive design whether it is viewed on retina screens or laptops.
+本專案著重於：
 
-✨ Support us! If you like this theme, click the ⭐ (Top right) and let it shine
+本地資料儲存架構設計
 
-![IMG_8566.jpg](https://berrydashboard.io/imp-images/berry-github-free-repo-1.jpg)
+桌面應用的狀態管理與 UI Layout
 
-## Table of contents
+使用 Tauri 實作檔案系統存取
 
-- [Getting Started](#getting-started)
-- [Download](#download)
-- [Why Berry?](#why-berry)
-- [What's included in Premium Version?](#whats-included-in-premium-version)
-- [Documentation](#documentation)
-- [Browser support](#browser-support)
-- [Technology Stack](#technology-stack)
-- [Berry Figma UI Kit](#berry-figma-ui-kit)
-- [Other Technologies](#other-technologies)
-- 💰[Save more with Big Bundle](#save-more-with-big-bundle)💰
-- [More React Dashboard Templates](#more-react-dashboard-templates)
-- [Issues?](#issues)
-- [License](#license)
-- [Contributor](#contributor)
-- [Useful Resources](#useful-resources)
-- [Community](#community)
-- [Follow us](#follow-us)
+視覺化儀表板、列表查詢與多條件篩選
 
-## Getting Started
+系統參數管理（工具、公司、支出類別…）
 
-Clone from Github
+📊 主要功能
+Dashboard 儀表板
 
-```
-git clone https://github.com/codedthemes/berry-free-react-admin-template.git
-```
+月收入、年收入統計
 
-## Download
+    常用項目統計
 
-- Berry Free
-  - [Live Preview](https://berrydashboard.io/free/)
-  - [Download](https://github.com/codedthemes/berry-free-react-admin-template)
-- Berry
-  - [Live Preview](https://berrydashboard.io)
-  - [Download](https://material-ui.com/store/items/berry-react-material-admin/)
+    圖表視覺化呈現（Recharts）
 
-## Why Berry?
+工作日誌管理
 
-Berry offers everything you need to create dashboards. We have included the following high-end features in our initial release:
+    每日工作記錄
 
-- Modern aesthetics UI design
-- Material-UI components
-- Fully Responsive, all modern browser supported
-- Easy to use code structure
-- Flexible & High-Performance code
-- Easy Documentation Guide
+    所有工作日誌查詢（年份、公司、工具、關鍵字）
 
-## What's included in Premium Version?
+    分頁、統計合計、自動計算金額
 
-[Pro version](https://berrydashboard.io) of Berry react template contains features like TypeScript, Next.js Seed versions, Apps, Authentication Methods (i.e. JWT, Auth0, Firebase, AWS, Supabase), Advance Components, Form Plugins, Layouts, Widgets, and many more.
+支出管理
 
-| [Berry Free](https://berrydashboard.io/free/) | [Berry](https://material-ui.com/store/items/berry-react-material-admin/) |
-| --------------------------------------------- | :----------------------------------------------------------------------- |
-| **9** Demo pages                              | **45+** demo pages                                                       |
-| -                                             | ✓ Multi-language                                                         |
-| -                                             | ✓ Dark/Light Mode 🌓                                                     |
-| -                                             | ✓ TypeScript version                                                     |
-| -                                             | ✓ Design files (Figma)                                                   |
-| -                                             | ✓ 6+ color Options                                                       |
-| -                                             | ✓ RTL                                                                    |
-| -                                             | ✓ JWT, Firebase, Auth0, AWS, Supabase authentications                    |
-| -                                             | ✓ [More components](https://berrydashboard.io/components/autocomplete)   |
+    每日支出記錄
 
-## Documentation
+    全部支出列表
 
-[Berry Documentation](https://codedthemes.gitbook.io/berry/) helps you with installation, deployment, and troubleshooting.
+    支出類別、付款方式設定
 
-## Browser support
+系統設定
 
-<img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/chrome.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/edge.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/safari.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/firefox.png" width="45" height="45" > <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/opera.png" width="45" height="45" >
+    常用公司設定
 
-## Technology Stack
+    常用工具設定
 
-- [Material UI V6](https://material-ui.com/)
-- Built with React Hooks API
-- Redux & React Context API for State Management
-- React Router for Navigation Routing
-- Support of vite
-- Code Splitting
-- CSS-in-JS where CSS is composed using JavaScript instead of defined in external files
+    支出分類管理
 
-## Berry Figma UI Kit
+本地端資料儲存架構
 
-<div>
-  <a href="https://codedthemes.com/item/berry-free-figma-ui-kit/">
-    <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/Banners/Figma_Free_Berry.png" width="450" alt="Figma Free">
-  </a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://codedthemes.com/item/berry-figma-ui-kit/">
-    <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/Banners/Figma-Pro-Berry.png" width="450" alt="Figma Pro">
-  </a>
-</div>
+    透過 Tauri FS API 完整讀寫 JSON
 
-## Other Technologies
+    Offline-first 設計，無需網路即可運作
 
-| Technology                                                                                                                        | Free                                                                              | Pro                                                                             |
-| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| <p align="center"><img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Angular.png" width="25" height="25"></p>   | [**Free**](https://codedthemes.com/item/berry-angular-free-admin-template/)       | [**Pro**](https://codedthemes.com/item/berry-angular-admin-dashboard-template/) |
-| <p align="center"><img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Bootstrap.png" width="30" height="30"></p> | [**Free**](https://codedthemes.com/item/berry-bootstrap-free-admin-template/)     | [**Pro**](https://codedthemes.com/item/berry-bootstrap-5-admin-template/)       |
-| <p align="center"><img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Vue.png" width="25" height="25"></p>       | [**Free**](https://codedthemes.com/item/berry-free-vuetify-vuejs-admin-template/) | [**Pro**](https://codedthemes.com/item/berry-vue-admin-dashboard/)              |
 
-## Save more with Big Bundle
 
-[![bundle-image](https://org-public-assets.s3.us-west-2.amazonaws.com/Banners/Bundle+banner.png)](https://links.codedthemes.com/jhFBJ)
+🛠️ 技術架構
 
-## More React Dashboard Templates
+    技術	               說明
 
-| Dashboard                                                                                                                                                          | FREE                                                                                | PRO                                                                                   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Mantis%20with%20name.png"  height="30" style="display:inline-block; vertical-align:middle;">  | [**Free**](https://mantisdashboard.io/free/)                                        | [**Pro**](https://mui.com/store/items/mantis-react-admin-dashboard-template/)</span>  |
-| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Datta%20with%20name.png" height="30" style="display:inline-block; vertical-align:middle;">    | [**Free**](https://codedthemes.com/item/datta-able-react-free-admin-template/)      | [**Pro**](https://codedthemes.com/item/datta-able-react-admin-template/)</span>       |
-| <img src="https://org-public-assets.s3.us-west-2.amazonaws.com/logos/Gradient%20with%20name.png" height="30" style="display:inline-block; vertical-align:middle;"> | [**Free**](https://codedthemes.com/item/gradient-able-reactjs-free-admin-template/) | [**Pro**](https://codedthemes.com/item/gradient-able-reactjs-admin-dashboard/)</span> |
+React + Vite	    前端框架與建構工具
+Material UI /   Tailwind	UI Layout 與設計
+Recharts	            圖形統計呈現
+Tauri (Rust)	打包成 Windows EXE、與本地檔案互動
+Tauri FS API	        JSON本地存取
 
-## Issues
 
-To report a bug, please submit an [issue](https://github.com/codedthemes/berry-free-react-admin-template/issues) on Github. We will respond as soon as possible to resolve the issue.
+🚀 開發方式（給開發者）
 
-## License
+啟動開發模式（需 Rust + Tauri build tools）：
 
-- Licensed cover under [MIT](https://github.com/codedthemes/berry-free-react-admin-template/blob/main/LICENSE)
+npx tauri dev
 
-## Contributor
+打包 Windows EXE：
 
-**CodedThemes Team**
+npx tauri build
 
-- https://x.com/codedthemes
-- https://github.com/codedthemes
+打包後的執行檔會位於：
 
-**Rakesh Nakrani**
+src-tauri/target/release/bundle/nsis
 
-- https://x.com/rakesh_nakrani
 
-**Brijesh Dobariya**
+📁 專案結構（簡略）
+src/
+ ├─ api/
+ ├─ assets/
+ ├─ contexts/
+ ├─ hooks/
+ ├─ layout/
+ ├─ routes/
+ ├─ store/
+ ├─ themes/
+ ├─ ui-component/
+ ├─ views/
+ ├─ App.jsx
+ └─ config.js
 
-- https://x.com/dobaria_brijesh
 
-## Useful Resources
+📝 Copyright Notice
+（依規定保留 Create React App 版權段落）
 
-- [More Admin Templates From CodedThemes](https://codedthemes.com/item/category/admin-templates/)
-- [Freebies From CodedThemes](https://codedthemes.com/item/category/free-templates/)
-- [Big Bundles](https://codedthemes.com/item/big-bundle/)
-- [Figma UI Kits](https://codedthemes.com/item/category/templates/figma/)
-- [Affiliate Program](https://codedthemes.com/affiliate/)
-- [Blogs](https://blog.codedthemes.com/)
-
-## Community
-
-- 👥Follow [@codedthemes](https://x.com/codedthemes)
-- 🔗Join [Discord](https://discord.com/invite/p2E2WhCb6s)
-- 🔔Subscribe to [Codedtheme Blogs](https://blog.codedthemes.com/)
-
-## Follow us
-
-- [Twitter](https://twitter.com/codedthemes) 🐦
-- [Dribbble](https://dribbble.com/codedthemes) 🏀
-- [Github](https://github.com/codedthemes) 🐙
-- [LinkedIn](https://www.linkedin.com/company/codedthemes/) 💼
-- [Instagram](https://www.instagram.com/codedthemes/) 📷
-- [Facebook](https://www.facebook.com/codedthemes) 🟦
+This project was bootstrapped with
+👉 Create React App (https://github.com/facebook/create-react-app
+)
